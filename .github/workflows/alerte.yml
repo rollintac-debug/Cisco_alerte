@@ -1,0 +1,38 @@
+name: Alerte Clasico
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alerte
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install requests playwright
+          python -m playwright install --with-deps chromium
+      - run: python check.py
+        env:
+          PAGE_URL: ${{ secrets.PAGE_URL }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TARGET_OFFER: ${{ vars.TARGET_OFFER }}
+          TEST_MODE: ${{ vars.TEST_MODE }}
+      - name: Sauvegarde de l'etat
+        run: |
+          git config user.name "alerte-bot"
+          git config user.email "alerte-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || git commit -m "state $(date -u +%H:%M)"
+          git push || true

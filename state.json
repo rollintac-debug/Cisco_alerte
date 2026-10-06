@@ -3,11 +3,11 @@
   "target": "Basic Plus",
   "last_code": 200,
   "target_status": "ACHETER DES BILLETS (actif) | ACHETER DES BILLETS (actif)",
-  "last_check": "2026-10-06T14:04:01+00:00",
+  "last_check": "2026-10-06T14:26:14+00:00",
   "all": {
-    "Basic": "Membres seulement (actif) | Membres seulement (actif)",
+    "Basic": "offre absente de la page",
     "Basic Plus": "ACHETER DES BILLETS (actif) | ACHETER DES BILLETS (actif)",
     "VIP": "ACHETER DES BILLETS (actif) | ACHETER DES BILLETS (actif)",
-    "VIP Premium": "Continuer avec VIP (actif) | Vivez la meilleure expérience (actif)"
+    "VIP Premium": "Vivez l'expérience complète (actif) | Vivez l'expérience complète (actif)"
   }
 }

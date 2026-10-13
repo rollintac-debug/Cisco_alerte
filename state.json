@@ -2,12 +2,12 @@
   "url": "https://www.fcbarcelona.fr/fr/billets/football/regular/laliga/fcbarcelona-realmadrid",
   "target": "Basic Plus",
   "last_code": 200,
-  "target_status": "ACHETER DES BILLETS (actif) | ACHETER DES BILLETS (actif)",
-  "last_check": "2026-10-13T09:04:15+00:00",
+  "target_status": "Complet (GRISÉ) | Complet (GRISÉ)",
+  "last_check": "2026-10-13T09:28:02+00:00",
   "all": {
     "Basic": "offre absente de la page",
-    "Basic Plus": "ACHETER DES BILLETS (actif) | ACHETER DES BILLETS (actif)",
-    "VIP": "ACHETER DES BILLETS (actif) | ACHETER DES BILLETS (actif)",
+    "Basic Plus": "Complet (GRISÉ) | Complet (GRISÉ)",
+    "VIP": "Réservez votre billet (actif) | Réservez votre billet (actif)",
     "VIP Premium": "Vivez l'expérience complète (actif) | Vivez l'expérience complète (actif)"
   }
 }
